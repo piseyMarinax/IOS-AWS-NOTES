@@ -1,0 +1,24 @@
+PODS:
+  - AWSAuthCore (2.6.26):
+    - AWSCore (= 2.6.26)
+  - AWSCore (2.6.26)
+  - AWSMobileClient (2.6.26):
+    - AWSAuthCore (= 2.6.26)
+
+DEPENDENCIES:
+  - AWSMobileClient
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AWSAuthCore
+    - AWSCore
+    - AWSMobileClient
+
+SPEC CHECKSUMS:
+  AWSAuthCore: bc6c8d7320eae8ef18939504d5a8a1588606c3a1
+  AWSCore: 0177bb7e5616d967277b398e7a05ed7a228e6158
+  AWSMobileClient: 1800cc78a28d49ac4b03deef5aefae8395f952b3
+
+PODFILE CHECKSUM: fdc1ee658e6d40ff881435ef44e0dbd5c27c7610
+
+COCOAPODS: 1.5.3
