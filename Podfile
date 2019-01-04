@@ -9,7 +9,9 @@ target 'Notes' do
   pod 'AWSMobileClient'
   pod 'AWSUserPoolsSignIn'
   pod 'AWSAuthUI'
-  pod 'AWSFacebookSignIn' 
+  pod 'AWSFacebookSignIn'
+  pod 'AWSGoogleSignIn'
+  pod 'GoogleSignIn'
 
   target 'NotesTests' do
     inherit! :search_paths
