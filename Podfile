@@ -12,6 +12,7 @@ target 'Notes' do
   pod 'AWSFacebookSignIn'
   pod 'AWSGoogleSignIn'
   pod 'GoogleSignIn'
+  pod 'AWSDynamoDB'
 
   target 'NotesTests' do
     inherit! :search_paths
