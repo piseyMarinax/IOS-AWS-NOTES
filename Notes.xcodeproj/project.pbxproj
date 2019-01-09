@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0753018CFC5FA04ECF14D717 /* Pods_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5CF08F08E8DB617E0A3C64 /* Pods_Notes.framework */; };
 		39AE91B321DF4B3400BEEF86 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE91B221DF4B3400BEEF86 /* Note.swift */; };
-		39AE91B521E08D2A00BEEF86 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 39AE91B421E08D2A00BEEF86 /* awsconfiguration.json */; };
+		39AE91B921E65EBC00BEEF86 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 39AE91B821E65EBC00BEEF86 /* awsconfiguration.json */; };
 		39F4D00721DCAA74009A1A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F4D00621DCAA74009A1A77 /* AppDelegate.swift */; };
 		39F4D00921DCAA74009A1A77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F4D00821DCAA74009A1A77 /* ViewController.swift */; };
 		39F4D00C21DCAA74009A1A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F4D00A21DCAA74009A1A77 /* Main.storyboard */; };
@@ -44,7 +44,7 @@
 		2BF305B16D217CAE4F88930C /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
 		321695B36CD2460E5A19B16C /* Pods_NotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39AE91B221DF4B3400BEEF86 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Note.swift; path = Models/NoSQL/Note.swift; sourceTree = "<group>"; };
-		39AE91B421E08D2A00BEEF86 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = awsconfiguration.json; path = ../../../../../../Downloads/awsconfiguration.json; sourceTree = "<group>"; };
+		39AE91B821E65EBC00BEEF86 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = awsconfiguration.json; path = ../../../../../../Downloads/awsconfiguration.json; sourceTree = "<group>"; };
 		39F4D00321DCAA74009A1A77 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F4D00621DCAA74009A1A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39F4D00821DCAA74009A1A77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 			children = (
 				39AE91B221DF4B3400BEEF86 /* Note.swift */,
 				39F4D00621DCAA74009A1A77 /* AppDelegate.swift */,
-				39AE91B421E08D2A00BEEF86 /* awsconfiguration.json */,
+				39AE91B821E65EBC00BEEF86 /* awsconfiguration.json */,
 				39F4D00821DCAA74009A1A77 /* ViewController.swift */,
 				39F4D00A21DCAA74009A1A77 /* Main.storyboard */,
 				39F4D00D21DCAA75009A1A77 /* Assets.xcassets */,
@@ -280,8 +280,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39AE91B521E08D2A00BEEF86 /* awsconfiguration.json in Resources */,
 				39F4D01121DCAA75009A1A77 /* LaunchScreen.storyboard in Resources */,
+				39AE91B921E65EBC00BEEF86 /* awsconfiguration.json in Resources */,
 				39F4D00E21DCAA75009A1A77 /* Assets.xcassets in Resources */,
 				39F4D00C21DCAA74009A1A77 /* Main.storyboard in Resources */,
 			);
@@ -331,6 +331,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Notes/Pods-Notes-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
@@ -338,6 +339,7 @@
 				"${BUILT_PRODUCTS_DIR}/AWSFacebookSignIn/AWSFacebookSignIn.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSGoogleSignIn/AWSGoogleSignIn.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
@@ -350,6 +352,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
@@ -357,6 +360,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSFacebookSignIn.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSGoogleSignIn.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSUserPoolsSignIn.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",

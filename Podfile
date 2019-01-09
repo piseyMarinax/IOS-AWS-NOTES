@@ -13,6 +13,8 @@ target 'Notes' do
   pod 'AWSGoogleSignIn'
   pod 'GoogleSignIn'
   pod 'AWSDynamoDB'
+  pod 'AWSS3'
+  pod 'AWSCognito'
 
   target 'NotesTests' do
     inherit! :search_paths
